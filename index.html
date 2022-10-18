@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Biglietto</title>
+</head>
+<body>
+
+    <div class="container ft-container">
+        <div class="row">
+            <div class="col-4">
+                <label for="name">Nome e Cognome</label>
+                <input type="text" id="name" placeholder="Inserisci il nome">
+            </div>
+            <div class="col-4">
+                <label for="km">Km da percorrere</label>
+                <input type="number" id="km" placeholder="Inserisci i Km">
+                <div>
+                    <button type="button" class="btn btn-outline-success" id="genera">Genera</button>
+                    <button type="button" class="btn btn-outline-success" id="annulla">Annulla</button>
+                </div>
+            </div>
+            <div class="col-4">
+                <label for="fascia">Fascia di et&aacute;</label>
+                <select id="fascia" placeholder="Inserisci i Km">
+                    <option value="minorenne">Minorenne</option>
+                    <option value="maggiorenne" selected>Maggiorenne</option>
+                    <option value="silver">Over 65</option>
+            </div>
+        </div>
+    </div>
+
+    <div class="container ticket hide">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Passeggero</th>
+                <th scope="col">Offerta</th>
+                <th scope="col">Carrozza</th>
+                <th scope="col">Codice CP</th>
+                <th scope="col">Costo Biglietto</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td id="outputName"></td>
+                <td id="outputOffer"></td>
+                <td id="outputCoach"></td>
+                <td id="outputCP"></td>
+                <td id="outputPrice"></td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+    
+
+    <script src="js/script.js"></script>
+</body>
+</html>
